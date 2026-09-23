@@ -1,11 +1,11 @@
-# Mobile Robot PID Controller
+# Mobil Robot PID Kontrolcü
 
-Differential-drive motor controller with quadrature encoder interrupt handling, PID speed control and JSON serial command parsing. It accepts linear/angular velocity commands or direct RPM targets and returns RPM/position feedback.
+Quadrature encoder interrupt okuma, PID hız kontrolü ve JSON seri komut ayrıştırma içeren diferansiyel sürüş motor kontrol örneğidir. Lineer/açısal hız komutlarını veya doğrudan RPM hedeflerini alır; RPM ve pozisyon geri bildirimi üretir.
 
-## Highlights
+## Öne Çıkanlar
 
-- Encoder ISR handling with `attachInterrupt`
-- 20 Hz control loop
-- Anti-windup integral limiting
-- Differential-drive kinematics
-- JSON serial interface
+- `attachInterrupt` ile encoder ISR yönetimi
+- 20 Hz kontrol döngüsü
+- Anti-windup integral sınırlama
+- Diferansiyel sürüş kinematiği
+- JSON seri haberleşme arayüzü

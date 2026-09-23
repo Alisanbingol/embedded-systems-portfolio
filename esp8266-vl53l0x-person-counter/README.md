@@ -1,14 +1,14 @@
-# ESP8266 VL53L0X Person Counter
+# ESP8266 VL53L0X Kişi Sayma
 
-Dual VL53L0X time-of-flight sensors are used to detect movement direction and count people entering or leaving an area. The firmware assigns separate I2C addresses through XSHUT pins, applies a simple state machine with hysteresis/cooldown logic, publishes JSON telemetry over MQTT and uses WS2812 LEDs for connection/sensor status.
+Bu projede iki adet VL53L0X time-of-flight sensör ile geçiş yönü algılanır ve içeri giren/çıkan kişi sayısı hesaplanır. Firmware, XSHUT pinleriyle sensörlere ayrı I2C adresleri atar, histerezis ve bekleme süreleri içeren bir durum makinesi kullanır, veriyi MQTT üzerinden JSON olarak yayınlar ve WS2812 LED'lerle bağlantı/sensör durumunu gösterir.
 
-## Hardware
+## Donanım
 
 - ESP8266 / NodeMCU
-- 2x VL53L0X ToF distance sensors
-- WS2812B LED strip or 3 addressable LEDs
-- MQTT broker for telemetry
+- 2x VL53L0X ToF mesafe sensörü
+- WS2812B LED veya 3 adreslenebilir LED
+- Telemetri için MQTT broker
 
-## Notes
+## Not
 
-Network and MQTT credentials are placeholders. Configure them locally before flashing.
+Wi-Fi ve MQTT bilgileri placeholder olarak bırakılmıştır. Kartı programlamadan önce kendi test bilgilerinizi girmeniz gerekir.

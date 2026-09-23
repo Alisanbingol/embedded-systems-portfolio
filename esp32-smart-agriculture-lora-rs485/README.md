@@ -1,18 +1,18 @@
-# ESP32 Smart Agriculture LoRa RS485 Node
+# ESP32 Akıllı Tarım LoRa RS485 Node
 
-Reads a multi-parameter soil sensor over RS485/Modbus and sends the collected data over a UART-connected LoRa module. The project demonstrates sensor command frames, half-duplex RS485 direction control and structured telemetry packaging.
+RS485/Modbus üzerinden çok parametreli toprak sensörü okunur ve toplanan veriler UART bağlı LoRa modülüyle iletilir. Proje; sensör komut frame'leri, half-duplex RS485 yön kontrolü ve yapılandırılmış sensör veri paketi kullanımını gösterir.
 
-## Hardware
+## Donanım
 
 - ESP32
-- RS485 soil sensor
-- LoRa UART module
-- RS485 transceiver with RE/DE control pins
+- RS485 toprak sensörü
+- UART LoRa modülü
+- RE/DE kontrollü RS485 transceiver
 
-## Measurements
+## Ölçülen Veriler
 
-- Soil moisture
-- Temperature
-- Electrical conductivity
+- Toprak nemi
+- Sıcaklık
+- Elektriksel iletkenlik
 - pH
-- Nitrogen, phosphorous and potassium
+- Azot, fosfor ve potasyum

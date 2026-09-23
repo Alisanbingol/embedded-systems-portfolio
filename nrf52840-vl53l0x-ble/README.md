@@ -1,3 +1,3 @@
-# nRF52840 VL53L0X BLE Distance Node
+# nRF52840 VL53L0X BLE Mesafe Node
 
-Low-power distance sensor node using VL53L0X over I2C and BLE notifications on nRF52840. The firmware includes sensor health handling, BLE advertising/connection flow and wait-for-event based power saving.
+nRF52840 üzerinde VL53L0X sensör ile I2C mesafe ölçümü yapan ve sonucu BLE notification ile gönderen düşük güç tüketimli node örneğidir. Firmware içinde sensör sağlık kontrolü, BLE advertising/connection akışı ve wait-for-event tabanlı güç tasarrufu yaklaşımı bulunur.

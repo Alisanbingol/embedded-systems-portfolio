@@ -1,30 +1,29 @@
-# Embedded Systems Portfolio
+# Gömülü Sistemler Portfolyosu
 
-This repository contains selected embedded software projects prepared as a portfolio for embedded firmware roles.
+Bu repo, gömülü yazılım pozisyonları için seçilmiş proje örneklerinden oluşur. Kodlar ESP8266, ESP32, nRF52840 ve STM32 üzerinde sensör okuma, haberleşme, gerçek zamanlı olay işleme, MQTT telemetri ve donanım-yazılım entegrasyonu konularını göstermek için düzenlenmiştir.
 
-The code demonstrates microcontroller-based development with ESP8266, ESP32, nRF52840 and STM32, including sensor integration, serial communication, BLE, LoRa/RS485, PID control, interrupt-driven encoder reading, MQTT publishing and low-power BLE operation.
+## Projeler
 
-## Projects
-
-| Project | Platform | Highlights |
+| Proje | Platform | Öne Çıkanlar |
 | --- | --- | --- |
-| `esp8266-vl53l0x-person-counter` | ESP8266 | Dual VL53L0X ToF sensors, I2C address assignment, state-machine based entry/exit counting, MQTT JSON publishing, WS2812 status LEDs |
-| `esp32-smart-agriculture-lora-rs485` | ESP32 | RS485/Modbus soil sensor reading, LoRa UART telemetry, structured sensor data packet |
-| `esp32-ble-beacon-scanner` | ESP32 | BLE active scan, service UUID filtering, nearest beacon selection using RSSI |
-| `mobile-robot-pid-controller` | Arduino-compatible MCU | Quadrature encoder interrupts, differential drive kinematics, PID speed control, JSON serial command/feedback |
-| `nrf52840-vl53l0x-ble` | nRF52840 | VL53L0X distance sensing, BLE service/characteristic notifications, low-power wait-for-event flow |
-| `stm32-uart-adc` | STM32F4 | STM32CubeMX project excerpt, ADC/UART peripheral setup, HAL-based C firmware modules |
+| `esp8266-vl53l0x-person-counter` | ESP8266 | Çift VL53L0X ToF sensör, I2C adres atama, giriş/çıkış yön algılama, durum makinesi, MQTT/JSON yayın, WS2812 durum LED'leri |
+| `esp32-smart-agriculture-lora-rs485` | ESP32 | RS485/Modbus toprak sensörü, LoRa UART telemetri, nem/sıcaklık/EC/pH/NPK veri paketi |
+| `esp32-ble-beacon-scanner` | ESP32 | BLE aktif tarama, UUID filtreleme, RSSI ile en yakın beacon seçimi, ek olarak BLE beacon verici örneği |
+| `esp32-mics6814-gas-monitor` | ESP32 | MiCS-6814 ile CO/NH3/NO2 ölçümü, ADC okuma, hareketli ortalama filtre, MQTT telemetri, RGB LED durum göstergesi |
+| `mobile-robot-pid-controller` | Arduino uyumlu MCU | Quadrature encoder interrupt okuma, diferansiyel sürüş kinematiği, PID hız kontrolü, JSON seri komut/geri bildirim |
+| `nrf52840-vl53l0x-ble` | nRF52840 | VL53L0X mesafe ölçümü, BLE servis/characteristic notification, düşük güç bekleme akışı |
+| `stm32-uart-adc` | STM32F4 | STM32CubeMX proje özeti, ADC/UART çevre birimleri, HAL tabanlı C firmware modülleri |
 
-## Security Note
+## Güvenlik Notu
 
-Real Wi-Fi credentials, MQTT broker addresses, device identifiers and production topics were removed. Replace placeholder values such as `YOUR_WIFI_SSID` and `YOUR_MQTT_BROKER` with local test values before running.
+Gerçek Wi-Fi bilgileri, MQTT broker adresleri, cihaz kimlikleri ve üretim ortamına ait topic değerleri kaldırılmıştır. Çalıştırmadan önce `YOUR_WIFI_SSID`, `YOUR_WIFI_PASSWORD`, `YOUR_MQTT_BROKER` gibi placeholder alanlarını kendi test ortamınıza göre doldurun.
 
-## Skills Shown
+## Gösterilen Yetkinlikler
 
-- C/C++ embedded firmware development
-- I2C, UART, SPI, RS485/Modbus and BLE usage
-- Interrupt handling, timers, ADC/PWM/GPIO and state machines
-- Sensor data filtering and event detection
-- MQTT/JSON telemetry
-- STM32CubeMX/HAL workflow
-- Hardware-software integration and debugging-oriented serial output
+- C/C++ ile gömülü yazılım geliştirme
+- I2C, UART, SPI, RS485/Modbus ve BLE kullanımı
+- Interrupt, zamanlama, ADC/PWM/GPIO ve durum makinesi tasarımı
+- Sensör verisi filtreleme, eşik kontrolü ve olay algılama
+- MQTT/JSON telemetri
+- STM32CubeMX/HAL iş akışı
+- Donanım-yazılım entegrasyonu ve seri port üzerinden hata ayıklama
